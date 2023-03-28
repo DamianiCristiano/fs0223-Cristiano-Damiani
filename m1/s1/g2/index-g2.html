@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="Primi passi operativi per creare un modello di pagina HTML per un post" content="Scopri come iniziare in modo facile.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sviluppo di una pagina web-blog epicode</title>
 </head>
 <body>
-    
+<div class="container">
+    <header>
+        <img src="/m1/s1/g2/assets/img/logo.svg" alt="logo epicode">
+        <h1>Epicode - il blog dei developers</h1>
+    </header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articoli</a></li>
+                    <li><a href="#">Job</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2> 
+            Come creare un template per i post
+            <section>di Mario Rossi - pubblicato il 25-10-2020</section>
+            </h2>
+        <article>
+                La prima cosa da fare e' suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine.
+            
+            <section>
+                Le varie aree saranno quindi suddivise in:
+            <ul>
+                <li>Contenuti di intestazione del tag &lt;header></li>
+                <li>Contenuti centrali variabili del tag &lt;main> (corpo principale)</li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer></li>
+                <li>Formattazione del codice</li>
+            </ul> 
+            </section>
+            <section>
+                Il testo dell' articolo dovra' essere formattato per identificare tutte le parti da selezionare con i CSS. Percio' i passi saranno:
+                <ul>
+                    <li>Pregettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                    <li>Scrivere l'HTML dal tag esterni a quelli interni e dall'alto verso il basso</li>
+                    <li>Applicare gli stili CSS</li>
+                    <li>L'applicazione di stili CSS e' cresciuta negli anni fino a raggiungere la diffusione pressocche' totale</li>
+                </ul>
+            </section>
+            <section>
+                <table>
+                    <caption>Diffsuione del CSS</caption>
+                    <tr>
+                        <th>Anno</th>
+                        <th>% di utilizzo</th>
+                        <th>Supporto Browser</th>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>20%</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td>35%</td>
+                        <td>22%</td>
+                    </tr>
+                        <td>2004</td>
+                        <td>45%</td>
+                        <td>42%</td>
+                    </tr>
+                    <tr>    
+                        <td>2008</td>
+                        <td>80%</td>
+                        <td>51%</td>
+                    <tr>
+                    </tr>
+                        <td>2012</td>
+                        <td>100%</td>
+                        <td>76%</td>
+                    <tr>
+                </table>
+                Un test di validazione potra' essere fatto tramite il tool online <a href="#">-Link esterno-</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro: <iframe width="560" height="315" src="https://www.youtube.com/embed/EyvOAhBXt18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+        </article>
+        </main>
+    <aside class="newslatter">
+        Vuoi rimanere aggiornato su altre novita' del blog? Iscrivi alla nostra newslatter:
+            <form>
+                <input type="email" placeholder="Inseriscri la tua email">
+               <br> <input type="button" value="iscriviti!"> </br>
+            </form>
+    </aside>
+    <article>
+        Articoli correlati
+        <section>
+            Validare il codice HTML
+            Categoria: developer
+            Data: 18-9-2020
+        </section>
+        <section>
+            Correggere la sintassi
+            Categoria: develop
+            Data: 16-9-2020
+        </section>
+        <section>
+            Meno Kb nella pagina
+            Categoria: develop
+            Data: 20-9-2020
+        </section>
+    </article>
+    <footer>
+        Blog epicode &copy;
+        Testata online di Mario Rossi, registrata con prot. n213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. info@epicode.school <a href="#">- LINK EMAIL -</a>
+    </footer>
+</div>    
 </body>
 </html>
