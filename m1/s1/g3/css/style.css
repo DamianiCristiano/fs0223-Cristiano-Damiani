@@ -9,12 +9,12 @@
     border-color: rgba(255,216,119,255) ;
 }
 
-.color-blue {
+.p-css {
     display: flex;
     justify-content: center;
     align-items: center ;
     height: 50px;
-    color: rgba(51,51,51,255);
+    color: rgb(21, 96, 81);
     background-color: rgb(253, 251, 241);
     font-weight: 600;
     margin-top: 0px;
@@ -42,12 +42,12 @@
     ;
 }
 
-.featured-in {
+.feature {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    border-left: 1px solid;
+    margin-right: 390px;
+    
 }
 
 .focaccia-desc  p {
@@ -67,7 +67,7 @@
     color: grey;
 }
 
-.ingredient-center  {
+.ingredient-center, p {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,4 +81,18 @@ li {
 
 ul {
     padding-left: 20px;
+}
+
+.color-feature {
+    color: red;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+a {
+    color: rgb(61, 144, 144);
 }
