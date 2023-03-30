@@ -46,8 +46,8 @@
     display: flex;
     flex-direction: column;
     border-left: 1px solid;
-    margin-right: 390px;
-    
+    border-color: rgb(8, 1, 1);
+    padding-left: 15px;
 }
 
 .focaccia-desc  p {
