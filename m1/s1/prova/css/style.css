@@ -86,7 +86,7 @@ h3 {
 
 .main-notebook {
     border-radius: 100%;
-    width: 300px;
+    max-width: 70%;
 }
 
 .footer-main {
