@@ -17,13 +17,13 @@ else if
 (x > 10 && x < 33)
 {document.write ('male')}
 else if
-(x > 66 && x <= 115)
+(x > 66 && x <= 100)
 {document.write ('bene')}
 else if
 (x <= 10)
 {document.write ('na merda')}
 else if
-(x > 115)
+(x > 101)
 {document.write ('non prendere per il culo')
 location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
 
