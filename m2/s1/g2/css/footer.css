@@ -1,0 +1,20 @@
+footer {
+    background-color: #fbf7e3;
+    padding: 20px;
+    
+}
+
+footer img {
+    width: 100%;
+}
+
+h3 {
+    margin: 0px;
+    color: #612406;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #612406
+}
