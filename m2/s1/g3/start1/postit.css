@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.lavagna {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    background-color: grey;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.post-it {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Indie Flower', cursive;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 75%, rgba(0,0,0,0.8) 100%);
+    background-color: bisque;
+    line-height: 60px;
+    transition: 500ms;
+}
+
+
+
+.post-it span {
+    font-size: 30px;
+}
+
+.post-it:nth-child(odd) {
+    rotate: 20deg;
+    background-color:rgb(255, 255, 131) ;
+}
+
+.post-it:nth-child(even) {
+    rotate: -20deg;
+    background-color: rgb(255, 169, 255);
+}
+
+.post-it:nth-child(3) {
+    background-color: aquamarine;
+    rotate: -12deg;
+}
+
+.post-it:nth-child(6) {
+    background-color: rgb(77, 255, 113);
+    rotate: 17deg;
+}
+
+.post-it:nth-child(7) {
+    background-color: rgb(255, 77, 77);
+    transform:rotate(-24deg) ;
+    
+}
+
+.post-it:hover {
+    box-shadow: 5px 5px 10px 0px #000000;
+    transition: all 1s;
+    transform: scale(1.2) rotate(0deg) ;
+}
