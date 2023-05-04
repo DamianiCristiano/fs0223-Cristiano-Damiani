@@ -1,0 +1,8 @@
+$bg_hero : #640fc5;
+$button_colori : #0e6cff,#ff8700,#4caf50;
+
+@each $button_colore in $button_colori {
+    .bg_color-#{$button_colore} {
+        background-color: $button_colore;
+    }
+};

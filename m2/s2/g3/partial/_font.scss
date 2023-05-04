@@ -1,0 +1,12 @@
+* {
+    color: #f4f4f4;
+}
+
+$font-sizes: 8px, 12px, 14px, 16px,;
+
+@each $font-size in $font-sizes {
+    .font-size-#{$font-size} {
+        font-size: $font-size;
+    }
+}
+
