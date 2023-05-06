@@ -1,4 +1,4 @@
-.background-nav {
+.background {
   background-color: #141414;
 }
 
@@ -160,4 +160,39 @@ body {
 .footer {
     margin: 0 400px;
     font-size: 30px;
+}
+
+.logo-profile {
+  width: 150px;
+}
+
+.background-nav {
+  background: linear-gradient(180deg, rgb(14, 14, 14) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.col-3 img {
+  width: 120px;
+}
+
+.dropdown .strive {
+  padding-right: 200px;
+  font-weight: 600;
+}
+
+.dropdown .language {
+  font-size: 12px;
+}
+
+.Maturity {
+  background-color: #333333;
+}
+
+.b-spacing {
+  letter-spacing: 2px;
+}
+
+.checkbox-info {
+  font-size: 8px;
+
+
 }
