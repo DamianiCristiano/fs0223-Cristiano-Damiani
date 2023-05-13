@@ -7,6 +7,7 @@ let fetchUrl = "https://striveschool-api.herokuapp.com/api/product/";
 let saveButton = document.getElementById("save-button");
 let deleteButton = document.getElementById("delete-button");
 let rowReference = document.getElementById("product-container");
+let detailContainer = document.getElementById("detail-container");
 
 // CARD CONSTRUCTOR
 
@@ -41,11 +42,10 @@ let getProduct = function () {
       }
     })
     .then((data) => {
-      console;
       data
         .forEach((event) => {
           let col = `
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-4 mb-3">
             <div class="card shadow">
             <img class='img-fluid' style="height: 175px" src="${event.imageUrl}" alt="">
             <div class="card-body">
@@ -55,6 +55,7 @@ let getProduct = function () {
             </p>
             <p>${event.brand} - ${event.price}€</p>
             <a href="./backoffice.html?eventId=${event._id}" class="btn btn-primary">MODIFICA</a>
+            <a href="./detail.html?eventId=${event._id}" class="btn btn-primary" id="dettagli">DETTAGLI</a>
             </div>
             </div>
             </div>
@@ -78,6 +79,10 @@ console.log("eventId");
 // DELETE CARD
 
 if (eventId) {
+  document.getElementsByTagName("h2")[0].innerText =
+    "Backoffice page - Modifica prodotto";
+  document.getElementById("save-button").innerText = "MODIFICA PRODOTTO";
+  document.getElementById("delete-button").classList.remove("d-none");
   deleteButton.addEventListener("click", () => {
     fetch(fetchUrl + eventId, {
       method: "DELETE",
@@ -157,3 +162,44 @@ saveButton.addEventListener("click", function (e) {
     .then((res) => console.log(res), location.assign("./homepage.html"))
     .catch((err) => console.log(err));
 });
+
+let getDetail = function () {
+  fetch(eventId ? fetchUrl + eventId : fetchUrl, {
+    headers: {
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMDQxODg4Zjc0MDAwMTQyODc0N2QiLCJpYXQiOjE2ODM4ODMwMzMsImV4cCI6MTY4NTA5MjYzM30.3qQmK43HJJsEYcGbkaRtb4GppuDS4s4mdTqU0aC_uas",
+    },
+  })
+    .then((res) => {
+      console.log(res);
+    })
+    .then((data) => {
+      data
+        .forEach((event) => {
+          let col = `
+            <div class="col-12 col-md-3">
+            <div class="card shadow">
+            <img class='img-fluid' style="height: 175px" src="${event.imageUrl}" alt="">
+            <div class="card-body">
+            <h5 class="card-title">${event.name}</h5>
+            <p class="card-text">
+            ${event.description}
+            </p>
+            <p>${event.brand} - ${event.price}€</p>
+            <a href="./backoffice.html?eventId=${event._id}" class="btn btn-primary">MODIFICA</a>
+            <a href="./detail.html?eventId=${event._id}" class="btn btn-primary" id="dettagli">DETTAGLI</a>
+            </div>
+            </div>
+            </div>
+            `;
+          detailContainer.innerHTML = col;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+};
+
+window.onload = () => {
+  getDetail();
+};
