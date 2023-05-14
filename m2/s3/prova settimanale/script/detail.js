@@ -44,19 +44,22 @@ let getProduct = function () {
     .then((event) => {
         console.log(event)
             let col = `
-                <div class="col-12 col-md-3">
-                <div class="card shadow">
-                <img class='img-fluid' style="height: 175px" src="${event.imageUrl}" alt="">
-                <div class="card-body">
-                <h5 class="card-title">${event.name}</h5>
-                <p class="card-text">
-                ${event.description}
-                </p>
-                <p>${event.brand} - ${event.price}€</p>
-                <a href="./backoffice.html?eventId=${event._id}" class="btn btn-primary">MODIFICA</a>
-                <a href="./detail.html?eventId=${event._id}" class="btn btn-primary" id="dettagli">DETTAGLI</a>
+                <div class="col col-md-7">
+                  <img class='img-fluid' src="${event.imageUrl}" alt="">
                 </div>
-                    </div>
+                <div class="col col-md-5 d-flex flex-column flex-wrap">
+                  <h5 class="card-title fs-1 mb-3">
+                    ${event.name}
+                  </h5>
+                  <hr>
+                  <p class="card-text fs-3 mt-3">
+                    ${event.description}
+                  </p>
+                  <hr>
+                  <p class="fs-3 mt-3">
+                    ${event.brand} - ${event.price}€
+                  </p>
+                  <a href="./backoffice.html?eventId=${event._id}" class="btn btn-warning mb-5">MODIFICA</a>
                 </div>
                 `;
             detailContainer.innerHTML = col;
