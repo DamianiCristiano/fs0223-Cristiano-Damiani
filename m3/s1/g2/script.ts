@@ -1,16 +1,21 @@
 class SonAccount{
+
     balanceInit: number
+
     constructor(balanceInit: number = 0){
         this.balanceInit = balanceInit
     }
+
     oneDeposit(oneDeposit:number):void{
         this.balanceInit = oneDeposit
         console.log('hai depositato ' + this.balanceInit + "$")
     }
+
     oneWithDraw(oneWithDraw:number):void{
         this.balanceInit = oneWithDraw
         console.log('hai prelevato ' + this.balanceInit + "$")
     }
+    
     showBalance():void{
         if(this.balanceInit <= 0)
         console.log('sei povero')
@@ -31,5 +36,7 @@ class motherAccount extends SonAccount {
 
 
 
-let SonAccount1 = new SonAccount()
-SonAccount1.showBalance()
+
+
+let SonAccount1 = new SonAccount(10)
+SonAccount1.showBalance
