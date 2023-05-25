@@ -68,4 +68,4 @@ var redditoDiCittadinza = /** @class */ (function (_super) {
     return redditoDiCittadinza;
 }(redditoDiCittadinzaAbs));
 var Franchino = new redditoDiCittadinza(2, 30000);
-console.log(Franchino.getUtiletasse());
+console.log(Franchino.getRedditoAnnuoNetto());

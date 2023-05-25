@@ -64,4 +64,4 @@ class redditoDiCittadinza extends redditoDiCittadinzaAbs {
 
 let Franchino = new redditoDiCittadinza(2 , 30000)
 
-console.log(Franchino.getUtiletasse())
+console.log(Franchino.getRedditoAnnuoNetto())
