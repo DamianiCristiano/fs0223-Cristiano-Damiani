@@ -1,0 +1,8 @@
+<div class="card" *ngFor="let post of ArrayActivePost">
+  <h5 class="card-header">{{post.id}}</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.body}}.</p>
+    <a (click)="post.active = !post.active; this.ArrayActivePost = this.PostSvc.getPosts(false)" class="btn btn-primary">attiva</a>
+  </div>
+</div>
