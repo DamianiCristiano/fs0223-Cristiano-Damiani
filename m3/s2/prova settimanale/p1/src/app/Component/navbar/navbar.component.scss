@@ -1,0 +1,45 @@
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-left: 50px;
+  font-size: 2em;
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  background:
+    linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+a:focus {
+  color: purple;
+}
+
+.completati:focus {
+  color: purple;
+}

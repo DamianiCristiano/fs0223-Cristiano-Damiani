@@ -1,0 +1,18 @@
+<div class="loading" *ngIf="loading">Loading...</div>
+
+
+<div *ngIf="!loading">
+  <hr>
+  <div class="noTodo" *ngIf="filterArrayPost.length == 0 && !loading">
+    Non ci sono Todo completati
+  </div>
+  <ul>
+    <li *ngFor="let todo of filterArrayPost">
+      {{todo.title}}
+      <button class="check" (click)="deleteTodo(todo); getTodos()">
+        X
+      </button>
+    </li>
+  </ul>
+  <hr>
+</div>

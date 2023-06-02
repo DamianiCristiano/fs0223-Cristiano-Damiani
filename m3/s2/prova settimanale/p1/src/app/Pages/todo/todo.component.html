@@ -1,0 +1,25 @@
+
+
+<div class="loading" *ngIf="loading">Loading...</div>
+
+
+<div *ngIf="!loading">
+  <hr>
+  <div class="noTodo" *ngIf="filterArrayPost.length == 0 && !loading">
+    Non ci sono Todo
+  </div>
+  <ul>
+    <li *ngFor="let todo of filterArrayPost">
+      {{todo.title}}
+      <button class="check" (click)="update(todo)">
+        ✔
+      </button>
+    </li>
+  </ul>
+  <hr>
+  <p>Aggiungi Todo</p>
+  <input [(ngModel)]="todo.title" class="text-todo" type="text" placeholder="Todo">
+  <button class="button" (click)="addTodos()">+</button>
+</div>
+
+
