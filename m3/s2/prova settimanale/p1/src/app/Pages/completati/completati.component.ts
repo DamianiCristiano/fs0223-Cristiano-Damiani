@@ -40,7 +40,9 @@ export class CompletatiComponent {
 
   update(todo: Todos) {
     this.todoSvc.updateTodo(todo);
-  };
+    setTimeout(() => {this.getTodos()
+    }, 100);
+  }
 
   deleteTodo(todo: Todos) {
     this.todoSvc.deleteTodo(todo);

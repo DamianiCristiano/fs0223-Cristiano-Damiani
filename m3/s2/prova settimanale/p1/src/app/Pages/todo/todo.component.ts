@@ -43,4 +43,10 @@ export class TodoComponent implements OnInit {
     setTimeout(() => {this.getTodos()
     }, 100);
   }
+
+  deleteTodo(todo: Todos) {
+    this.todoSvc.deleteTodo(todo);
+    setTimeout(() => {this.getTodos();
+    }, 100);
+  }
 }

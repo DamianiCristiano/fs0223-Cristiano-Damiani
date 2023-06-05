@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <p>foto con like: {{likeArray.length}}</p>
+    <div class="col-3" *ngFor="let card of cardArray">
+      <div class="card my-3">
+        <img class="card-img-top" src="{{card.thumbnailUrl}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{card.title}}</h5>
+          <button type="button" class="btn btn-success me-2" (click)="push(card)">Like</button>
+          <button type="button" class="btn btn-danger" (click)="remove(card)">Elimina</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
