@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { RegisterData } from '../interfaces/register-data';
 import { AuthService } from '../auth.service';
+import { RegisterData } from '../interfaces/register-data';
+
 
 @Component({
   selector: 'app-register',
@@ -8,6 +9,7 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+
 
   constructor(
     private authSvc: AuthService
@@ -28,5 +30,4 @@ export class RegisterComponent {
       alert(accessData.user.name)
     })
   }
-
 }

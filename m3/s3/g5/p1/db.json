@@ -1,5 +1,25 @@
 {
-
-"users" : []
-
+  "users": [
+    {
+      "email": "cristiano_dd@hotmail.it",
+      "password": "$2a$10$7llGoU8oANY6mrWhQuJteuiAJgEA1YC7a8xJjP9Rj.qq5WDBtkYzS",
+      "name": "cristiano",
+      "surname": "damiani",
+      "id": 1
+    },
+    {
+      "email": "merrino.francesco@gmail.com",
+      "password": "$2a$10$qP8t9I4oar0WNNaImIOC4eZ79ZjDg.JflN9Nm8ws6DxpsIIt9PC6e",
+      "name": "francesco",
+      "surname": "merrino",
+      "id": 2
+    },
+    {
+      "email": "merrino.marco@gmail.com",
+      "password": "$2a$10$ABJykmiFmvPUQf7xJXbkQeNHRSsZy1NhS9uRihq1W5Ip9/3JaNdji",
+      "name": "marco",
+      "surname": "merrino",
+      "id": 3
+    }
+  ]
 }
